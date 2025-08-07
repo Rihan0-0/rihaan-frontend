@@ -1,18 +1,20 @@
 import Header from "@/components/Header";
-import WelcomeCard from "@/components/WelcomeCard";
-import InfoCards from "@/components/InfoCards";
-import RandomStars from "@/components/RandomStars";
+import HeroSection from "@/components/HeroSection";
+import CoursesSection from "@/components/CoursesSection";
+import AboutSection from "@/components/AboutSection";
+import BackgroundPattern from "@/components/BackgroundPattern";
 
 export default function Home() {
   return (
-    <div className="bg-orange-50 min-h-screen relative overflow-hidden">
-      <RandomStars count={60} />
+    <div className="bg-gradient-to-br from-orange-50 via-blue-50 to-purple-50 min-h-screen relative">
+      <BackgroundPattern />
 
       <div className="relative z-10">
         <Header />
-        <main className="p-6 max-w-5xl mx-auto">
-          <WelcomeCard />
-          <InfoCards />
+        <main>
+          <HeroSection />
+          <CoursesSection />
+          <AboutSection />
         </main>
       </div>
     </div>

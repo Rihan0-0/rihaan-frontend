@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🕌 Rihaan Academy - Quran Memorization System
 
-## Getting Started
+A modern, Arabic-first web application built with Next.js for **Rihaan Academy** to manage Quran memorization programs, track student progress, and facilitate communication between students, teachers, and administrators.
 
-First, run the development server:
+## 🌟 Features
+
+### ✅ Completed Features
+
+- 🏠 **Academy Homepage** - Beautiful landing page with academy information
+- 👨‍🎓 **Student Dashboard** - Progress tracking, schedule, and goals
+- 📱 **Responsive Design** - Works perfectly on all devices
+- 🔤 **Arabic RTL Support** - Native Arabic interface with proper typography
+- 🎨 **Modern UI/UX** - Clean, educational-themed design
+
+### 🚧 In Development
+
+- 👨‍🏫 **Teacher Dashboard** - Class management and student evaluation
+- 📊 **Admin Panel** - System-wide management and analytics
+- 🔐 **Authentication System** - Secure login for all user types
+- 📝 **Exam Module** - Online Quran recitation tests
+- 💬 **Notification System** - Real-time updates and announcements
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS with custom Arabic typography
+- **Fonts**: Noto Sans Arabic for optimal Arabic readability
+- **Icons**: Custom SVG patterns and educational emojis
+- **Language**: TypeScript for type safety
+- **Deployment**: Vercel-ready
+
+## 🎨 Design Philosophy
+
+- **Educational Focus**: Clean, distraction-free interface suitable for all ages
+- **Arabic-First**: Native RTL support with proper Arabic typography
+- **Accessibility**: High contrast colors and readable fonts
+- **Islamic Aesthetics**: Subtle geometric patterns and mosque iconography
+
+## 📁 Project Structure
+
+```
+my-website/
+├── app/                    # Next.js App Router
+│   ├── page.tsx           # Academy homepage
+│   ├── layout.tsx         # Root layout with Arabic fonts
+│   ├── globals.css        # Global styles and custom classes
+│   └── student/[id]/      # Dynamic student dashboard
+├── components/            # Reusable UI components
+│   ├── Header.tsx         # Navigation header
+│   ├── BackgroundPattern.tsx # Educational background
+│   ├── WelcomeCard.tsx    # Student progress card
+│   ├── InfoCards.tsx      # Dashboard information cards
+│   └── sections/          # Homepage sections
+└── public/images/         # Static assets
+```
+
+## 🚀 Getting Started
+
+1. **Install dependencies**:
+
+```bash
+npm install
+```
+
+2. **Run development server**:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open your browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Current Status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The frontend is actively being developed with a focus on:
 
-## Learn More
+- ✅ Student dashboard with Arabic interface
+- ✅ Academy homepage with course information
+- ✅ Responsive design for all screen sizes
+- ✅ Educational background patterns
+- 🔄 Teacher dashboard (coming soon)
+- 🔄 Backend API integration (coming soon)
 
-To learn more about Next.js, take a look at the following resources:
+## 📧 Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For questions about this project, please reach out to the Rihaan Academy development team.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+_Built with ❤️ for Quran education_

@@ -20,14 +20,24 @@ export default function NotificationCard({
 
   return (
     <div
-      className={`${bgColor} p-4 mt-4 rounded-lg flex items-center justify-between`}
+      className={`${bgColor} p-5 mt-6 rounded-xl flex items-center justify-between shadow-lg`}
     >
       <div className="text-white">
-        <h4 className="font-bold">Notifications</h4>
-        <p className="text-sm">{date}</p>
-        <p className="mt-1">{text}</p>
+        <h4 className="font-bold text-lg font-arabic mb-1">الإشعارات</h4>
+        <p className="text-sm opacity-90 font-arabic mb-2">{date}</p>
+        <p className="mt-1 text-base font-medium font-arabic leading-relaxed">
+          {text}
+        </p>
       </div>
-      {icon && <Image src={icon} alt="icon" width={60} height={60} />}
+      {icon && (
+        <Image
+          src={icon}
+          alt="أيقونة"
+          width={60}
+          height={60}
+          className="opacity-90"
+        />
+      )}
     </div>
   );
 }
